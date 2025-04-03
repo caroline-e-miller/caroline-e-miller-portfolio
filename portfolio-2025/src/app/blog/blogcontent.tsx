@@ -1,13 +1,23 @@
 "use client"
 
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import SecondaryNav from '../components/secondarynav';
 
 export default function BlogContent() {
     const router = useRouter();
 
     return (
-        <div className="mt-4 ml-4">
-            <button type="button" onClick={() => router.push(`/`)}>Home</button>
+        <div className="container">
+            <button type="button" onClick={() => router.push(`/`)}>
+                <Image
+                    src="/cmklogo.png"
+                    width={75}
+                    height={75}
+                    alt="Homepage logo"
+                />
+            </button>
+            <SecondaryNav />
             <div className="relative min-h-screen mt-20 ml-20 mr-40 mb-20">
                 <div className="text-3xl mb-6">Blog</div>
                 <div className="text-xl">January 9, 2025</div>
