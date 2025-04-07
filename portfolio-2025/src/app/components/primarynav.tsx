@@ -19,7 +19,7 @@ export default function PrimaryNav() {
             <img
               alt=""
               src="/cmklogo.png"
-              className="h-12 w-auto"
+              className="h-16 w-auto rounded-3xl"
             />
           </a>
         </div>

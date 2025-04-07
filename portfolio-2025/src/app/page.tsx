@@ -4,7 +4,49 @@ export default function Home() {
 
   return (
     <div>
-    welcome 2 my website posers
+      <div className="flex lg:flex justify-between mb-20">
+        <div className="mt-8 ml-40">
+          <span className="mt-80 font-bold text-6xl">
+            Welcome!
+          </span>
+          <div className="mt-8 text-md">... to my portfolio, posers</div>
+        </div>
+        <div className="overflow-hidden rounded-lg bg-white shadow w-fit h-fit mr-40">
+          <div className="px-4 py-5 sm:p-6">
+            <img
+              alt=""
+              src="/me_photo.jpg"
+              className="h-96 w-auto"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex lg:flex justify-start ml-40">
+        <div className="overflow-hidden rounded-lg bg-white shadow w-fit">
+          <div className="px-4 py-5 sm:p-6">
+            <img
+              alt=""
+              src="/chicago_skyline.jpg"
+              className="h-96 w-auto"
+            />
+          </div>
+        </div>
+        <div className="mt-20 ml-20">
+          <div className="mt-8 text-md">I live in hot dog town</div>
+        </div>
+      </div>
+      <div className="flex lg:flex justify-between  ml-40">
+        <div className="mt-20 text-md">My dog is dead</div>
+        <div className="overflow-hidden rounded-lg bg-white shadow w-fit mr-40">
+          <div className="px-4 py-5 sm:p-6">
+            <img
+              alt=""
+              src="/chewy_good_boi.png"
+              className="h-96 w-auto"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   )
 
