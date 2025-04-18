@@ -4,7 +4,8 @@
 
 export default function PortfolioContent() {
     return (
-        <div>
+        <div className="ml-40 mr-40 my-20">
+            <span className="block text-lg font-bold text-gray-900">For security purposes, a password is required to view this content. To acquire the password, please fill out the contact form <a href="/contact" className="underline underline-offset-2 text-blue-600">here</a>.</span>
             <div className="flex lg:flex justify-center">
                 <div className="mt-20 w-80">
                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
