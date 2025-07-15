@@ -9,7 +9,7 @@ export default function Home() {
           <span className="mt-80 font-bold text-6xl">
             Welcome!
           </span>
-          <div className="mt-8 text-md">I'm so glad you're here.</div>
+          <div className="mt-8 text-md">My name is Caroline. I'm a software engineer, musician, and runner. I'm so glad you're here!</div>
         </div>
         <div className="overflow-hidden rounded-lg bg-white shadow w-fit h-fit mr-40">
           <div className="px-4 py-5 sm:p-6">

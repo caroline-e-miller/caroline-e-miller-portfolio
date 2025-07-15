@@ -3,7 +3,7 @@
 export default function AboutContent() {
     return (
         <div>
-            <div className="mt-8 ml-40">
+            <div className="px-6 py-24 mx-40">
                 <span className="mt-80 font-bold text-4xl">
                     About
                 </span>
