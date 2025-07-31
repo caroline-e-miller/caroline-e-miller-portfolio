@@ -11,12 +11,12 @@ export default function Home() {
           </span>
           <div className="mt-8 text-md">My name is Caroline. I'm a software engineer, musician, and runner. I'm so glad you're here!</div>
         </div>
-        <div className="overflow-hidden rounded-lg bg-white shadow w-fit h-fit mr-40">
+        <div className="overflow-hidden rounded-lg bg-white shadow max-w-xs w-full h-fit mr-40">
           <div className="px-4 py-5 sm:p-6">
             <img
               alt=""
               src="/life_photos/me_photo.jpg"
-              className="h-96 w-auto"
+              className="w-full h-auto h-auto"
             />
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Home() {
             <img
               alt=""
               src="/life_photos/chicago_skyline.jpg"
-              className="h-96 w-auto"
+              className="object-cover max-w-sm h-auto"
             />
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
             <img
               alt=""
               src="/life_photos/chewy_good_boi.png"
-              className="h-96 w-auto"
+              className="object-cover max-w-sm h-auto"
             />
           </div>
         </div>

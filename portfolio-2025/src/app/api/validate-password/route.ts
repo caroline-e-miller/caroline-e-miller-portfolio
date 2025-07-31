@@ -3,9 +3,15 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request, res: Response) {
     const portfolioPassword = process.env.PORTFOLIO_PASSWORD;
 
+    console.log( process.env, 'process.env');
+
+    console.log({ portfolioPassword }, 'portfolioPassword');
+
     console.log({ req }, 'req')
     const body = await req.json();
     const { password } = body;
+
+    console.log({ password }, 'password');
 
     try {
         if (!password) {
