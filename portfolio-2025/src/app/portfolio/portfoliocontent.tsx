@@ -14,7 +14,6 @@ export default function PortfolioContent() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ password }),
             })
-            console.log(res, 'res')
 
             const data = await res.json();
 
