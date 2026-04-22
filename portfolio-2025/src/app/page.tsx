@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div>
       <div className="flex items-center justify-center min-h-full">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-12 mb-20 sm:text-left sm:mx-20">
-          <div>
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-12 mb-20 text-center lg:text-left sm:mx-20">
+          <div className="mt-10 mx-6 lg:mx-0lg:mt-0">
             <span className="font-bold text-6xl">
               Welcome!
             </span>
