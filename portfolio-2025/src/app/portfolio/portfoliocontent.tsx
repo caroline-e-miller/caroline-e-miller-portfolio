@@ -4,32 +4,32 @@ import { useState } from 'react'
 // use server for API key security (client may expose it)
 
 export default function PortfolioContent() {
-    const [password, setPassword] = useState('');
-    const [message, setMessage] = useState('');
+    // const [password, setPassword] = useState('');
+    // const [message, setMessage] = useState('');
 
-    const validatePassword = async () => {
-        try {
-            const res = await fetch('../api/validate-password', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ password }),
-            })
+    // const validatePassword = async () => {
+    //     try {
+    //         const res = await fetch('../api/validate-password', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/json' },
+    //             body: JSON.stringify({ password }),
+    //         })
 
-            const data = await res.json();
+    //         const data = await res.json();
 
-            if (!res.ok) {
-                throw new Error(data.error || 'Something went wrong.');
-            }
+    //         if (!res.ok) {
+    //             throw new Error(data.error || 'Something went wrong.');
+    //         }
 
-            setMessage(data.message);
-        } catch (error) {
-            setMessage('Oopsie.');
-        }
-    };
+    //         setMessage(data.message);
+    //     } catch (error) {
+    //         setMessage('Oopsie.');
+    //     }
+    // };
     return (
         <div className="px-6 py-24 mx-40">
-            <span className="block text-lg font-bold text-gray-900">For security purposes, a password is required to view this content. To acquire the password, please fill out the contact form <a href="/contact" className="underline underline-offset-2 text-blue-600">here</a>.</span>
-            <div className="flex lg:flex justify-center">
+            <span className="block text-lg font-bold text-gray-900">For security purposes, my portfolio is available upon request for interviews. To reach me, please fill out the contact form <a href="/contact" className="underline underline-offset-2 text-blue-600">here</a> and I will get back to you within 24 hours so we can set up a time to chat.</span>
+            {/* <div className="flex lg:flex justify-center">
                 <div className="mt-20 w-80">
                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
                         Input password to view portfolio content
@@ -53,8 +53,8 @@ export default function PortfolioContent() {
                         </button>
                         {message && <p>{message}</p> }
                     </div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </div>
     )
 }
