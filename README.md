@@ -98,9 +98,7 @@ portfolio-2025/
 
 ## 🚀 Deployment
 
-This app is optimized for deployment on Vercel.
-
-For other platforms, build the app and serve the `.next` folder.
+This app is deployed on GitHub Pages.
 
 
 ## 📄 License

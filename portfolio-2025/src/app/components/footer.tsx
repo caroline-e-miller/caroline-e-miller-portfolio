@@ -1,11 +1,12 @@
 "use client"
+import React from "react";
 import "../globals.css";
 
 const navigation = [
     {
       name: 'GitHub',
       href: 'https://github.com/caroline-e-miller/portfolio-mcportface',
-      icon: (props) => (
+      icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -30,7 +31,7 @@ const navigation = [
             ))}
           </div>
           <p className="text-center text-sm/6 text-gray-600 dark:text-gray-300 md:order-1 md:mt-0">
-            &copy; 2026 Caroline Miller King. All rights reserved.
+            &copy; 2026 Caroline Miller. All rights reserved.
           </p>
         </div>
       </footer>
