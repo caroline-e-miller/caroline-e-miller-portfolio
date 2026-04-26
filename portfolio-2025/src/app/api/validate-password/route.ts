@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-export async function POST(req: Request, res: Response) {
+export async function POST(req: Request) {
     const portfolioPassword = process.env.PORTFOLIO_PASSWORD;
 
     console.log( process.env, 'process.env');
@@ -24,7 +24,7 @@ export async function POST(req: Request, res: Response) {
         if (password === portfolioPassword) {
             return NextResponse.json({ message: 'Welcome to the portfolio!' }, { status: 200 });
         }
-    } catch (error) {
+    } catch {
         return NextResponse.json({ message: 'Invalid JSON' }, { status: 400 });
     }
 }

@@ -1,8 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Caroline Miller - Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 15, showcasing projects and professional work.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** Headless UI
+- **Theme Management:** next-themes
+- **Fonts:** Geist (Google Fonts)
+- **Deployment:** Vercel
+
+## 📋 Prerequisites
+
+Before running this project, make sure you have the following installed:
+
+- **Node.js** 18.17 or later
+- **npm** or **yarn** or **pnpm**
+
+## 🛠️ Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/caroline-e-miller/portfolio-mcportface.git
+   cd portfolio-mcportface/portfolio-2025
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Set up environment variables (if needed):**
+   - Copy `.env.example` to `.env.local` if you have any environment variables
+   - This project uses Formspree for contact form, so ensure the form action URL is correct
+
+## 🚀 Running the Development Server
+
+Start the development server:
 
 ```bash
 npm run dev
@@ -10,27 +50,92 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The app will automatically reload when you make changes to the code.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📜 Available Scripts
 
-## Learn More
+- `npm run dev` - Start the development server
+- `npm run build` - Build the app for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality checks
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Building for Production
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To build the app for production:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+This will create an optimized build in the `.next` folder.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+portfolio-2025/
+├── src/
+│   └── app/
+│       ├── components/          # Reusable components
+│       │   ├── footer.tsx      # Site footer
+│       │   └── primarynav.tsx  # Navigation header
+│       ├── about/              # About page
+│       ├── blog/               # Blog page
+│       ├── contact/            # Contact page
+│       ├── portfolio/          # Portfolio page
+│       ├── api/                # API routes
+│       ├── globals.css         # Global styles
+│       ├── layout.tsx          # Root layout
+│       └── page.tsx            # Home page
+├── public/                     # Static assets
+├── tailwind.config.ts          # Tailwind configuration
+├── next.config.ts              # Next.js configuration
+├── postcss.config.mjs          # PostCSS configuration
+├── eslint.config.mjs           # ESLint configuration
+└── tsconfig.json               # TypeScript configuration
+```
+
+## 🎨 Features
+
+- **Responsive Design:** Mobile-first approach with Tailwind CSS
+- **Dark/Light Mode:** Theme switching with system preference detection
+- **TypeScript:** Full type safety
+- **SEO Optimized:** Server-side rendering with Next.js
+- **Contact Form:** Integrated with Formspree
+- **Modern UI:** Clean, professional design with Headless UI components
+
+## 🚀 Deployment
+
+This app is optimized for deployment on Vercel:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically on every push
+
+For other platforms, build the app and serve the `.next` folder.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature`
+5. Open a pull request
+
+## 📄 License
+
+This project is private and proprietary.
+
+## 📞 Contact
+
+Caroline Miller King
+- Website: [Your portfolio URL]
+- LinkedIn: [Your LinkedIn]
+- Email: [Your email]
+
+---
+
+Built with ❤️ using Next.js

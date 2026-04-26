@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -21,14 +23,16 @@ export default function PrimaryNav() {
     <header className="bg-transparent">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Home logo</span>
-            <img
+            <Image
               alt=""
               src="/cmklogo.png"
+              width={48}
+              height={48}
               className="h-16 w-auto rounded-3xl"
             />
-          </a>
+          </Link>
         </div>
 
         {/* desktop navigation */}
