@@ -109,32 +109,14 @@ portfolio-2025/
 
 ## 🚀 Deployment
 
-This app is optimized for deployment on Vercel:
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically on every push
+This app is optimized for deployment on Vercel.
 
 For other platforms, build the app and serve the `.next` folder.
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature/your-feature`
-5. Open a pull request
 
 ## 📄 License
 
 This project is private and proprietary.
-
-## 📞 Contact
-
-Caroline Miller King
-- Website: [Your portfolio URL]
-- LinkedIn: [Your LinkedIn]
-- Email: [Your email]
 
 ---
 
