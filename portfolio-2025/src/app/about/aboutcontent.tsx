@@ -11,7 +11,7 @@ export default function AboutContent() {
                 </span>
                 <div className="mr-4 lg:mr-40">
                     <div className="mt-12">
-                        Caroline Miller King is a software engineer and musician living in the windy city of Chicago, Illinois. Born and raised by the foothills in the Rocky Mountains of Colorado, Caroline began studying music at a young age, which would later become crucial to her expertise and perspective as a software engineer. 
+                        Caroline Miller is a software engineer and musician living in the windy city of Chicago, Illinois. Born and raised by the foothills in the Rocky Mountains of Colorado, Caroline began studying music at a young age, which would later become crucial to her expertise and perspective as a software engineer. 
                     </div>
                     <div className="mt-12">
                         In 2017, Caroline graduated with a bachelor&apos;s degree in Instrumental Music Education from Florida State University. Three years later, in May of 2020, she graduated with a Master of Music degree from the University of Texas at Austin. However, the COVID-19 pandemic had made career prospects of the orchestral music world especially uncertain. Deciding it was time to pursue a new career path, Caroline obtained a certificate in full-stack web development from the University of Texas at Austin Center for Professional Education.

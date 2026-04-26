@@ -30,15 +30,8 @@ Before running this project, make sure you have the following installed:
 2. **Install dependencies:**
    ```bash
    npm install
-   # or
-   yarn install
-   # or
-   pnpm install
    ```
 
-3. **Set up environment variables (if needed):**
-   - Copy `.env.example` to `.env.local` if you have any environment variables
-   - This project uses Formspree for contact form, so ensure the form action URL is correct
 
 ## 🚀 Running the Development Server
 
@@ -46,10 +39,6 @@ Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
