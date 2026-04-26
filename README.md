@@ -24,7 +24,7 @@ Before running this project, make sure you have the following installed:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/caroline-e-miller/caroline-e-miller-portfolio.git
-   cd caroline-e-miller-portfolio/portfolio-2025
+   cd caroline-e-miller-portfolio
    ```
 
 2. **Install dependencies:**
@@ -65,7 +65,7 @@ This will create an optimized build in the `.next` folder.
 ## 📁 Project Structure
 
 ```
-portfolio-2025/
+caroline-e-miller-portfolio/
 ├── src/
 │   └── app/
 │       ├── components/          # Reusable components
