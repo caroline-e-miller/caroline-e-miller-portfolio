@@ -23,8 +23,8 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/caroline-e-miller/portfolio-mcportface.git
-   cd portfolio-mcportface/portfolio-2025
+   git clone https://github.com/caroline-e-miller/caroline-e-miller-portfolio.git
+   cd caroline-e-miller-portfolio/portfolio-2025
    ```
 
 2. **Install dependencies:**
