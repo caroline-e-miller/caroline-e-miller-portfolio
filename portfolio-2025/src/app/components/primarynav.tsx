@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useTheme } from 'next-themes'
 
 const navigation = [
   { name: 'About', href: '/about' },
@@ -10,6 +11,11 @@ const navigation = [
 
 export default function PrimaryNav() {
   const [isOpen, setIsOpen] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark')
+  }
 
   return (
     <header className="bg-transparent">
@@ -28,7 +34,7 @@ export default function PrimaryNav() {
         {/* desktop navigation */}
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-foreground">
               {item.name}
             </a>
           ))}
@@ -36,6 +42,22 @@ export default function PrimaryNav() {
 
         {/* desktop github link */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <button
+            onClick={toggleTheme}
+            className="mr-4 text-foreground hover:text-gray-800"
+            aria-label="Toggle theme"
+            suppressHydrationWarning
+          >
+            {theme === 'dark' ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            )}
+          </button>
           <a href="https://github.com/caroline-e-miller/portfolio-mcportface">
             <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -80,15 +102,22 @@ export default function PrimaryNav() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-6 py-4 text-sm font-semibold text-gray-900 hover:bg-gray-100"
+                  className="block px-6 py-4 text-sm font-semibold text-foreground hover:bg-gray-100"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
+              <button
+                onClick={toggleTheme}
+                className="block w-full text-left px-6 py-4 text-sm font-semibold text-foreground hover:bg-gray-100"
+                suppressHydrationWarning
+              >
+                {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+              </button>
               <a
                 href="https://github.com/caroline-e-miller/portfolio-mcportface"
-                className="block px-6 py-4 text-sm font-semibold text-gray-900 hover:bg-gray-100"
+                className="block px-6 py-4 text-sm font-semibold text-foreground hover:bg-gray-100"
               >
                 GitHub
               </a>

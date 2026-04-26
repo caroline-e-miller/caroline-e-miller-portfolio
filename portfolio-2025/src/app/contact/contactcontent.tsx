@@ -1,26 +1,22 @@
 "use client"
 
-import { useRouter } from 'next/navigation';
 import { useState } from 'react'
-// import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import { Field, Label, Switch } from '@headlessui/react'
-// import PrimaryNav from '../components/primarynav';
 
 export default function AboutContent() {
-    const router = useRouter();
     const [agreed, setAgreed] = useState(false);
 
     return (
         <div>
             <div className="isolate bg-transparent px-6 py-24 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Contact</h2>
-                    <p className="mt-2 text-lg/8 text-gray-600">Please reach out for portfolio access, or if you have any further questions.</p>
+                    <h2 className="text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">Contact</h2>
+                    <p className="mt-2 text-lg/8 text-foreground">Please reach out for portfolio access, or if you have any further questions.</p>
                 </div>
-                <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+                <form action="https://formspree.io/f/mzdywnlo" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
-                            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="first-name" className="block text-sm/6 font-semibold text-foreground">
                                 First name
                             </label>
                             <div className="mt-2.5">
@@ -29,12 +25,12 @@ export default function AboutContent() {
                                     name="first-name"
                                     type="text"
                                     autoComplete="given-name"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="block dark:bg-gray-800 w-full rounded-md bg-white px-3.5 py-2 text-base text-foreground outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="last-name" className="block text-sm/6 font-semibold text-foreground">
                                 Last name
                             </label>
                             <div className="mt-2.5">
@@ -43,12 +39,12 @@ export default function AboutContent() {
                                     name="last-name"
                                     type="text"
                                     autoComplete="family-name"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="block dark:bg-gray-800 w-full rounded-md bg-white px-3.5 py-2 text-base text-foreground outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="company" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="company" className="block text-sm/6 font-semibold text-foreground">
                                 Company
                             </label>
                             <div className="mt-2.5">
@@ -57,12 +53,12 @@ export default function AboutContent() {
                                     name="company"
                                     type="text"
                                     autoComplete="organization"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="block dark:bg-gray-800 w-full rounded-md bg-white px-3.5 py-2 text-base text-foreground outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="email" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="email" className="block text-sm/6 font-semibold text-foreground">
                                 Email
                             </label>
                             <div className="mt-2.5">
@@ -71,12 +67,12 @@ export default function AboutContent() {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="block w-full rounded-md bg-white dark:bg-gray-800 px-3.5 py-2 text-base text-foreground outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                 />
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="message" className="block text-sm/6 font-semibold text-gray-900">
+                            <label htmlFor="message" className="block text-sm/6 font-semibold text-foreground">
                                 Message
                             </label>
                             <div className="mt-2.5">
@@ -84,7 +80,7 @@ export default function AboutContent() {
                                     id="message"
                                     name="message"
                                     rows={4}
-                                    className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                    className="block w-full rounded-md bg-white dark:bg-gray-800 px-3.5 py-2 text-base text-foreground outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
                                     defaultValue={''}
                                 />
                             </div>

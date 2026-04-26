@@ -19,17 +19,17 @@ const navigation = [
   
   export default function Footer() {
     return (
-      <footer className="footer bg-blue-100">
+      <footer className="footer bg-blue-100 dark:bg-blue-900">
         <div className="mx-auto max-w-7xl px-3 py-6 md:flex md:items-center md:justify-between lg:px-8">
           <div className="flex justify-center gap-x-6 md:order-2">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-600 hover:text-gray-800 hidden md:block">
+              <a key={item.name} href={item.href} className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 hidden md:block">
                 <span className="sr-only">{item.name}</span>
                 <item.icon aria-hidden="true" className="size-6" />
               </a>
             ))}
           </div>
-          <p className="text-center text-sm/6 text-gray-600 md:order-1 md:mt-0">
+          <p className="text-center text-sm/6 text-gray-600 dark:text-gray-300 md:order-1 md:mt-0">
             &copy; 2026 Caroline Miller King. All rights reserved.
           </p>
         </div>
