@@ -75,7 +75,6 @@ portfolio-2025/
 │       ├── blog/               # Blog page
 │       ├── contact/            # Contact page
 │       ├── portfolio/          # Portfolio page
-│       ├── api/                # API routes
 │       ├── globals.css         # Global styles
 │       ├── layout.tsx          # Root layout
 │       └── page.tsx            # Home page
