@@ -5,11 +5,15 @@ import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import Image from 'next/image'
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const navigation = [
-  { name: 'About', href: '/about' },
-  { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'About', href: isProd ?'/caroline-e-miller-portfolio/about' : '/about' },
+  { name: 'Portfolio', href: isProd ?'/caroline-e-miller-portfolio/portfolio' : '/portfolio' },
+  { name: 'Contact', href: isProd ?'/caroline-e-miller-portfolio/contact' : '/contact' },
 ]
+
+
 
 export default function PrimaryNav() {
   const [isOpen, setIsOpen] = useState(false)
