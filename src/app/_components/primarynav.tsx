@@ -62,7 +62,7 @@ export default function PrimaryNav() {
               </svg>
             )}
           </button>
-          <a href="https://github.com/caroline-e-miller/portfolio-mcportface">
+          <a href="https://github.com/caroline-e-miller/caroline-e-miller-portfolio">
             <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
               <path
                 fillRule="evenodd"
@@ -112,7 +112,7 @@ export default function PrimaryNav() {
                 </a>
               ))}
               <a
-                href="https://github.com/caroline-e-miller/portfolio-mcportface"
+                href="https://github.com/caroline-e-miller/caroline-e-miller-portfolio"
                 className="block px-6 py-4 text-sm font-semibold text-foreground hover:bg-gray-100 hover:dark:bg-gray-800"
               >
                 GitHub

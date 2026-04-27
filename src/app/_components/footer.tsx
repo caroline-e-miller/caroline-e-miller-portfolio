@@ -5,7 +5,7 @@ import "../globals.css";
 const navigation = [
     {
       name: 'GitHub',
-      href: 'https://github.com/caroline-e-miller/portfolio-mcportface',
+      href: 'https://github.com/caroline-e-miller/caroline-e-miller-portfolio',
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path

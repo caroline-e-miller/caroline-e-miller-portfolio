@@ -12,7 +12,7 @@ module.exports = {
   assetPrefix: isProd ? '/caroline-e-miller-portfolio/' : '',
   env: {
     customKey: 'my-value',
-    trailingSlash: true,
+    trailingSlash: 'true',
   },
   images: {
     unoptimized: true,
